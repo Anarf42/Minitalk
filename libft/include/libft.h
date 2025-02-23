@@ -6,7 +6,7 @@
 /*   By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 01:13:22 by anruiz-d          #+#    #+#             */
-/*   Updated: 2025/02/19 01:55:15 by anruiz-d         ###   ########.fr       */
+/*   Updated: 2025/02/20 14:16:57 by anruiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_printf.h"
+# include "get_next_line.h"
 
 typedef struct s_list
 {
