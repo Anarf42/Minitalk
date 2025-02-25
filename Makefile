@@ -6,7 +6,7 @@
 #    By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/24 16:45:08 by anruiz-d          #+#    #+#              #
-#    Updated: 2025/02/25 15:14:36 by anruiz-d         ###   ########.fr        #
+#    Updated: 2025/02/25 15:16:21 by anruiz-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ $(NAMES):	$(OBJ_SERVER_FILE)
 			$(CC) $(FLAGS) $(OBJ_SERVER_FILE) $(INCLUDE) libft/$(LIBFT) -o $(NAMES)
 
 ####################################################################
-#							OBJECT FILE RULE	  				   #
+#							OBJECT FILE RULE					   #
 ####################################################################
 
 $(DIR_OBJS)/%.o: $(DIR_SRCS)/%.c
