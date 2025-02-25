@@ -6,7 +6,7 @@
 #    By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/10 12:41:48 by anruiz-d          #+#    #+#              #
-#    Updated: 2025/02/19 01:49:35 by anruiz-d         ###   ########.fr        #
+#    Updated: 2025/02/25 12:45:33 by anruiz-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,21 +57,21 @@ COLOR_CYAN = \033[36m
 all: $(NAME) bonus
 
 $(NAME): $(DIR_OBJS) $(OBJ_FILES)
-			@echo "$(COLOR_YELLOW)Creando la libreria $(NAME) ...$(COLOR_RESET)"
-			@echo "$(COLOR_CYAN)Archivando $(words $(OBJ_FILES)) archivos objeto en $(NAME) ...$(COLOR_RESET)"
+#			#@echo "$(COLOR_YELLOW)Creando la libreria $(NAME) ...$(COLOR_RESET)"
+#			#@echo "$(COLOR_CYAN)Archivando $(words $(OBJ_FILES)) archivos objeto en $(NAME) ...$(COLOR_RESET)"
 			@$(AR) $(NAME) $(OBJ_FILES)
-			@echo "$(COLOR_GREEN)¡Librería $(NAME) creada con éxito! $(COLOR_RESET)"
+#			#@echo "$(COLOR_GREEN)¡Librería $(NAME) creada con éxito! $(COLOR_RESET)"
 
 bonus: $(DIR_OBJS) $(OBJ_BONUS_FILES)
 	@$(AR) $(NAME) $(OBJ_BONUS_FILES)
-	@echo "$(COLOR_GREEN)¡Bonus compilados con éxito!$(COLOR_RESET)"
+#	@echo "$(COLOR_GREEN)¡Bonus compilados con éxito!$(COLOR_RESET)"
 
 $(DIR_OBJS):
 		@$(MKDIR) $(DIR_OBJS)
 			
 $(DIR_OBJS)/%.o: $(DIR_SRCS)/%.c
 			@mkdir -p $(dir $@)
-			@echo "$(COLOR_CYAN)Compilando $(notdir $<)...$(COLOR_RESET)"
+#			 @echo "$(COLOR_CYAN)Compilando $(notdir $<)...$(COLOR_RESET)"
 			@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:
