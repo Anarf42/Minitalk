@@ -6,7 +6,7 @@
 /*   By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 02:38:26 by anruiz-d          #+#    #+#             */
-/*   Updated: 2025/02/25 15:03:22 by anruiz-d         ###   ########.fr       */
+/*   Updated: 2025/02/25 15:09:39 by anruiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,6 @@ int	main(int argc, char **argv)
 		i++;
 	}
 	send_char(server_pid, '\0');
-	ft_printf("\033[32mmessage sent successfully to server %d\033[0m\n", server_pid); // *** TEST with COLOR_RED ***
+	ft_printf("\033[32mmessage sent successfully to server %d\033[0m\n", server_pid);
 	return (0);
 }
